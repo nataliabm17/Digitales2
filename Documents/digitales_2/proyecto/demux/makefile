@@ -1,0 +1,10 @@
+all: 
+	yosys -s demux.tcl
+	sed -i 's/demux/synth/' synth.v
+	sed -i 's/dataout0/out_synth0/' synth.v
+	sed -i 's/dataout1/out_synth1/' synth.v
+	sed -i 's/validout0/valid_out0_synth/' synth.v
+	sed -i 's/validout1/valid_out1_synth/' synth.v
+	iverilog -o demux bancoPrueba.v 
+	vvp demux
+	gtkwave demux.gtkw
