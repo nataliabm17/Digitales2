@@ -7,7 +7,7 @@ endmodule
 module NOT(A, Y);
 input A;
 output Y;
-assign  Y = ~A;
+assign Y = ~A;
 endmodule
 
 module NAND(A, B, Y);
