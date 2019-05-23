@@ -1,0 +1,42 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Wed May 22 04:25:56 2019
+[*]
+[dumpfile] "/home/daniela/Desktop/demux2/demux.vcd"
+[dumpfile_mtime] "Wed May 22 04:25:40 2019"
+[dumpfile_size] 25283
+[savefile] "/home/daniela/Desktop/demux2/demux.gtkw"
+[timestart] 0
+[size] 2033 1222
+[pos] -1 -1
+*-17.029936 125000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoPruebas.
+[sst_width] 404
+[signals_width] 350
+[sst_expanded] 1
+[sst_vpaned_height] 479
+@28
+BancoPruebas.clk_2f
+@22
+BancoPruebas.data_in[7:0]
+@28
+BancoPruebas.valid_in
+@22
+BancoPruebas.data_out_0[7:0]
+BancoPruebas.out_synth0[7:0]
+@28
+BancoPruebas.valid_out_0
+BancoPruebas.valid_out0_synth
+@22
+BancoPruebas.data_out_1[7:0]
+BancoPruebas.out_synth1[7:0]
+@28
+BancoPruebas.valid_out_1
+BancoPruebas.valid_out1_synth
+BancoPruebas.demux.selector
+BancoPruebas.reset
+BancoPruebas.synth.flag
+@29
+BancoPruebas.demux.selector
+[pattern_trace] 1
+[pattern_trace] 0
