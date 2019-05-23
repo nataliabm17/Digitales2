@@ -26,25 +26,30 @@ module probador(
 		data_in1 = 8'b0;
 		
 		@(posedge clk_2f);
+		
+		@(posedge clk_2f);
+
 		@(posedge clk_2f);
 		reset <= 1;
 		data_in0 <= $random;
 		data_in1 <= $random;
-		valid_in0 <= 1;
+		valid_in0<=1;
+		
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+		//valid_in0 <= 1;
+		
 
 		@(posedge clk_2f);
 		data_in0 <= $random;
 		data_in1 <= $random;
-		valid_in1 <= 1;
+		
 
 		@(posedge clk_2f);
 		data_in0 <= $random;
 		data_in1 <= $random;
-
-		@(posedge clk_2f);
-		data_in0 <= $random;
-		data_in1 <= $random;
-
+		//valid_in1 <= 1;
 
 		@(posedge clk_2f);
 		data_in0 <= $random;
@@ -77,8 +82,7 @@ module probador(
 		@(posedge clk_2f);
 		data_in0 <= $random;
 		data_in1 <= $random;
-		valid_in0 <= 0;
-		valid_in1 <= 0; 
+
 
 		@(posedge clk_2f);
 		data_in0 <= $random;

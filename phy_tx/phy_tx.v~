@@ -29,7 +29,10 @@ module phy_tx (
     wire [7:0] lane0;
     wire [7:0] lane1;
 	wire [7:0] d_out2;
-	wire v_out, valid0, valid1, valid0bs, valid1bs, v_out2;
+	wire [7:0] inps1;
+	wire [7:0] inps0;
+
+	wire v_out, valid0, valid1, valid0bs, valid1bs, v_out2, validps0, validps1;
     //wire clk2f;
     
    
@@ -42,11 +45,7 @@ module phy_tx (
                     .data_out1(in1),
                     .valid_out0(valid0),
                     .valid_out1(valid1),
-                    .reset (reset)
-
-);
-
-
+                    .reset (reset));
 
 	mux mux1( .clk_2f (clk_2f), 
 			.reset (reset), 
@@ -72,6 +71,9 @@ module phy_tx (
 								.lane_1 (lane1), 
 								.valid_0 (valid0bs),
 								.valid_1 (valid1bs));
+   
+
+
     ParaleloSerie p2s0 (.clk_8f(clk_8f),
                     .clk_f (clk_f),
                     .data_inP(lane0),

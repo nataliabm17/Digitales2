@@ -25,6 +25,10 @@ module byte_striping (
 		    valid_0<=0; 
 		    valid_1<=0; 
 		end else begin 
+			valid0F <= valid_0;
+			valid1F <= valid_1;
+			lane0F <= lane_0;
+			lane1F <= lane_1;
 	  		if(valid_in==1) begin
 				if (contador0==0 && valid_in==1) begin
 					lane_0<=data_in; 

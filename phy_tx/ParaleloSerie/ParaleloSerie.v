@@ -25,6 +25,7 @@ module ParaleloSerie (
         data2send = 'hBC;
       end
     end else begin
+	  data2sendF = 'hBC;
       out44 = 8;
       data_outS = 0;
       data2send = data2sendF;

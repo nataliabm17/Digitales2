@@ -29,7 +29,10 @@ module phy_tx (
     wire [7:0] lane0;
     wire [7:0] lane1;
 	wire [7:0] d_out2;
-	wire v_out, valid0, valid1, valid0bs, valid1bs, v_out2;
+	wire [7:0] inps1;
+	wire [7:0] inps0;
+
+	wire v_out, valid0, valid1, valid0bs, valid1bs, v_out2, validps0, validps1;
     //wire clk2f;
     
    
@@ -42,11 +45,7 @@ module phy_tx (
                     .data_out1(in1),
                     .valid_out0(valid0),
                     .valid_out1(valid1),
-                    .reset (reset)
-
-);
-
-
+                    .reset (reset));
 
 	mux mux1( .clk_2f (clk_2f), 
 			.reset (reset), 
@@ -57,7 +56,7 @@ module phy_tx (
 			.valid_in1 (valid1), 
 			.valid_out (v_out));
 
-    etapa2_flops flops2(.clk_2f (clk_8f),
+    etapa2_flops flops2(.clk_8f (clk_8f),
                     .data_in0 (d_out),
                     .valid_in0 (v_out),
                     .data_out0 (d_out2),
@@ -65,13 +64,17 @@ module phy_tx (
                     .reset (reset));
 
 	byte_striping byte_striping1(.clk_2f (clk_2f), 
+								.clk_f (clk_f),
 								.valid_in (v_out2), 
 								.data_in (d_out2), 
 								.reset (reset), 
 								.lane_0 (lane0), 
 								.lane_1 (lane1), 
-								.valid_0 (valid0bs),
-								.valid_1 (valid1bs));
+								.valid_0F (valid0bs),
+								.valid_1F (valid1bs));
+   
+
+
     ParaleloSerie p2s0 (.clk_8f(clk_8f),
                     .clk_f (clk_f),
                     .data_inP(lane0),

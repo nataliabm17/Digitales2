@@ -8,11 +8,28 @@ module ParaleloSerie (
   output reg data_outS);
 
   reg [2:0] out44, out44F;
-  reg [7:0] data2sendF;
+  reg [7:0] data2sendF, datainF;
+	
+/*  always @ (posedge clk_f) begin
+	if (!reset) begin
+		datainF <= 0;
+	end
+	else begin
+		datainF <= data_inP;
+	end
+  end*/
 
   always @ (posedge clk_8f) begin
     out44F <= out44 -1;
     data2sendF <= data2send;
+  end
+  always @ (posedge clk_8f) begin
+	if (!reset) begin
+		
+	end
+	else begin
+
+	end
   end
 
   always @ ( * ) begin

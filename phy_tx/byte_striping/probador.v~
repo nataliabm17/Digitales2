@@ -65,10 +65,9 @@ module probador(
  #15 $finish;
     end
 
-initial clk_2f <=1; //Se crea la senal de reloj
+initial clk_2f <=0; //Se crea la senal de reloj
 
 		always #2 clk_2f<= ~clk_2f; 
-           initial clk_f <= 1;
-      always #8 clk_f<= ~clk_f;
+       
  
 endmodule
