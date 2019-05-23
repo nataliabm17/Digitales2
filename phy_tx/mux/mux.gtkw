@@ -1,0 +1,44 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Wed May 15 18:04:58 2019
+[*]
+[dumpfile] "/home/est/Escritorio/U/DigitalesII/Proyecto/muxtest/mux.vcd"
+[dumpfile_mtime] "Wed May 15 18:04:48 2019"
+[dumpfile_size] 5443
+[savefile] "/home/est/Escritorio/U/DigitalesII/Proyecto/muxtest/mux.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-18.261248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoPruebas.
+[sst_width] 223
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 160
+@22
+[color] 1
+BancoPruebas.data_in0[7:0]
+[color] 2
+BancoPruebas.data_in1[7:0]
+[color] 3
+BancoPruebas.data_out[7:0]
+[color] 4
+BancoPruebas.data_out_synth[7:0]
+@28
+[color] 5
+BancoPruebas.f2
+[color] 6
+BancoPruebas.reset_L
+[color] 7
+BancoPruebas.valid_in0
+[color] 1
+BancoPruebas.valid_in1
+[color] 2
+BancoPruebas.valid_out
+[color] 3
+BancoPruebas.valid_out_synth
+BancoPruebas.mux.selector2
+@29
+BancoPruebas.mux.selector
+[pattern_trace] 1
+[pattern_trace] 0

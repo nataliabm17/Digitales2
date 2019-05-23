@@ -1,0 +1,58 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Wed May 22 03:23:46 2019
+[*]
+[dumpfile] "/home/daniela/Desktop/phy_tx/phy.vcd"
+[dumpfile_mtime] "Wed May 22 03:21:05 2019"
+[dumpfile_size] 126681
+[savefile] "/home/daniela/Desktop/phy_tx/phys.gtkw"
+[timestart] 0
+[size] 2028 1152
+[pos] 157 20
+*-14.657842 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoPruebas.
+[sst_width] 404
+[signals_width] 450
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@200
+-Cond
+@28
+BancoPruebas.phy_tx.clk_8f
+BancoPruebas.phy_tx.clk_2f
+BancoPruebas.phy_tx.clk_f
+@22
+BancoPruebas.phy_tx.data_in0[7:0]
+BancoPruebas.phy_tx.data_in1[7:0]
+@23
+BancoPruebas.phy_tx.d_out[7:0]
+@22
+BancoPruebas.phy_tx.lane0[7:0]
+BancoPruebas.phy_tx.lane1[7:0]
+BancoPruebas.phy_tx.data2send0[7:0]
+BancoPruebas.phy_tx.data2send1[7:0]
+@28
+BancoPruebas.phy_tx.data_outS0
+BancoPruebas.phy_tx.data_outS1
+BancoPruebas.phy_tx.reset
+BancoPruebas.phy_tx.v_out
+@200
+-Est
+@28
+BancoPruebas.synth.clk_2f
+@22
+BancoPruebas.synth.data_in0[7:0]
+BancoPruebas.synth.data_in1[7:0]
+@28
+BancoPruebas.synth.reset
+@22
+BancoPruebas.synth.d_out[7:0]
+BancoPruebas.synth.lane0[7:0]
+BancoPruebas.synth.lane1[7:0]
+BancoPruebas.synth.data2send0_synth[7:0]
+BancoPruebas.synth.data2send1_synth[7:0]
+@28
+BancoPruebas.synth.data_outS0_synth
+BancoPruebas.synth.data_outS1_synth
+[pattern_trace] 1
+[pattern_trace] 0
