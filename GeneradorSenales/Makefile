@@ -1,6 +1,6 @@
 
 Wave1: Verilog1
-	gtkwave Generador128f.vcd
+	gtkwave generador.gtkw
 
 Verilog1: SED1
 	iverilog -o a.o BancoGenerador.v

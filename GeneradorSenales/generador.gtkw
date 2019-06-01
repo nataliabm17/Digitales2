@@ -1,0 +1,33 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Sat Jun  1 21:37:38 2019
+[*]
+[dumpfile] "/home/daniela/GeneradorSenales/Generador128f.vcd"
+[dumpfile_mtime] "Sat Jun  1 21:36:24 2019"
+[dumpfile_size] 2621
+[savefile] "/home/daniela/GeneradorSenales/generador.gtkw"
+[timestart] 0
+[size] 1628 1038
+[pos] -473 -303
+*-12.861288 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoGenerador.
+[sst_width] 404
+[signals_width] 250
+[sst_expanded] 1
+[sst_vpaned_height] 261
+@200
+-Conductual
+@28
+BancoGenerador.Generador128f_.clk_2f
+BancoGenerador.Generador128f_.clk_8f
+BancoGenerador.Generador128f_.clk_f
+BancoGenerador.Generador128f_.reset
+@200
+-Estructural
+@28
+BancoGenerador.Generador128f_Est_.clk_2f_Est
+BancoGenerador.Generador128f_Est_.clk_8f
+BancoGenerador.Generador128f_Est_.clk_f_Est
+BancoGenerador.Generador128f_Est_.reset
+[pattern_trace] 1
+[pattern_trace] 0
