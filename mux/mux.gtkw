@@ -1,44 +1,53 @@
 [*]
 [*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
-[*] Wed May 15 18:04:58 2019
+[*] Sat Jun  1 15:19:44 2019
 [*]
-[dumpfile] "/home/est/Escritorio/U/DigitalesII/Proyecto/muxtest/mux.vcd"
-[dumpfile_mtime] "Wed May 15 18:04:48 2019"
-[dumpfile_size] 5443
-[savefile] "/home/est/Escritorio/U/DigitalesII/Proyecto/muxtest/mux.gtkw"
+[dumpfile] "/home/est/Escritorio/git/Digitales2/mux/mux.vcd"
+[dumpfile_mtime] "Sat Jun  1 15:02:43 2019"
+[dumpfile_size] 39298
+[savefile] "/home/est/Escritorio/git/Digitales2/mux/mux.gtkw"
 [timestart] 0
 [size] 1000 600
-[pos] -1 -1
-*-18.261248 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] -677 196
+*-18.417366 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] BancoPruebas.
 [sst_width] 223
 [signals_width] 182
 [sst_expanded] 1
 [sst_vpaned_height] 160
-@22
-[color] 1
-BancoPruebas.data_in0[7:0]
-[color] 2
-BancoPruebas.data_in1[7:0]
-[color] 3
-BancoPruebas.data_out[7:0]
-[color] 4
-BancoPruebas.data_out_synth[7:0]
+@200
+-CONDUCTUAL
 @28
-[color] 5
-BancoPruebas.f2
-[color] 6
-BancoPruebas.reset_L
-[color] 7
-BancoPruebas.valid_in0
-[color] 1
-BancoPruebas.valid_in1
-[color] 2
-BancoPruebas.valid_out
-[color] 3
-BancoPruebas.valid_out_synth
-BancoPruebas.mux.selector2
-@29
-BancoPruebas.mux.selector
+BancoPruebas.mux.f2
+BancoPruebas.mux.reset_L
+@22
+BancoPruebas.mux.data_in0[7:0]
+@28
+BancoPruebas.mux.valid_in0
+@22
+BancoPruebas.mux.data_in1[7:0]
+@28
+BancoPruebas.mux.valid_in1
+@22
+BancoPruebas.mux.data_out[7:0]
+@28
+BancoPruebas.mux.valid_out
+@200
+-ESTRUCTURAL
+@28
+BancoPruebas.synth.f2
+BancoPruebas.synth.reset_L
+@22
+BancoPruebas.synth.data_in0[7:0]
+@28
+BancoPruebas.synth.valid_in0
+@22
+BancoPruebas.synth.data_in1[7:0]
+@28
+BancoPruebas.synth.valid_in1
+@22
+BancoPruebas.synth.data_out_synth[7:0]
+@28
+BancoPruebas.synth.valid_out_synth
 [pattern_trace] 1
 [pattern_trace] 0
