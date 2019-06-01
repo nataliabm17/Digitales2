@@ -1,13 +1,13 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Thu May 16 01:48:43 2019
+[*] Mon May 27 16:41:57 2019
 [*]
-[dumpfile] "/home/daniela/Documents/digitales_2/proyecto/byte_striping.vcd"
-[dumpfile_mtime] "Thu May 16 01:47:39 2019"
-[dumpfile_size] 23047
-[savefile] "/home/daniela/Documents/digitales_2/proyecto/byte_striping.gtkw"
+[dumpfile] "/home/daniela/Desktop/phy_tx/byte_striping/byte_striping.vcd"
+[dumpfile_mtime] "Mon May 27 16:41:41 2019"
+[dumpfile_size] 28801
+[savefile] "/home/daniela/Desktop/phy_tx/byte_striping/byte_striping.gtkw"
 [timestart] 0
-[size] 1794 1114
+[size] 1793 1114
 [pos] 285 96
 *-13.873189 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] bancoprueba.
@@ -19,6 +19,8 @@
 -Conductual
 @28
 bancoprueba.cond.clk_2f
+@29
+bancoprueba.cond.clk_f
 @22
 bancoprueba.cond.data_in[7:0]
 bancoprueba.cond.lane_0[7:0]
@@ -30,15 +32,15 @@ bancoprueba.cond.valid_1
 bancoprueba.cond.valid_in
 @200
 -Estructural
-@29
+@28
 bancoprueba.est.clk_2f
 bancoprueba.est.contador0
 bancoprueba.est.contador1
-@23
+@22
 bancoprueba.est.data_in[7:0]
 bancoprueba.est.lane_0_synth[7:0]
 bancoprueba.est.lane_1_synth[7:0]
-@29
+@28
 bancoprueba.est.reset
 bancoprueba.est.valid_0_synth
 bancoprueba.est.valid_1_synth

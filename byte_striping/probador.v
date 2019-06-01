@@ -1,5 +1,6 @@
 module probador(
     output reg clk_2f, 
+    output reg clk_f,
     output reg valid_in,
     output reg [7:0]data_in,
     output reg reset,
@@ -64,9 +65,12 @@ module probador(
  #15 $finish;
     end
 
-initial clk_2f <=0; //Se crea la senal de reloj
+initial clk_2f <=1; //Se crea la senal de reloj
 
 		always #2 clk_2f<= ~clk_2f; 
+initial clk_f <=1; //Se crea la senal de reloj
+
+		always #4 clk_f<= ~clk_f; 
        
  
 endmodule

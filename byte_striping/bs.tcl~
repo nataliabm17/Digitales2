@@ -1,9 +1,0 @@
-read_verilog demux_comp.v
-hierarchy -check -top demux_comp
-proc; opt; fsm; opt; memory; opt
-techmap; opt
-dfflibmap -liberty cmos_cells.lib
-abc -liberty cmos_cells.lib
-clean
-write_verilog synth_comp.v
-show demux_comp
