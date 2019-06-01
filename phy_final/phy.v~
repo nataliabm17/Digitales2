@@ -1,0 +1,28 @@
+`include "Generador128f.v"
+`include "phy_rx.v"
+`include "phy_tx.v"
+module phy (
+   input clk_8f,
+   input [7:0] data_in0,
+   input [7:0]data_in1,
+   input reset,
+    input valid_in0,
+    input valid_in1,
+	output [7:0] data_out_0,
+	output [7:0] data_out_1,
+    output valid_out_0,
+    output valid_out_1
+);
+	
+
+    Generador128f generador (.clk_8f (clk_8f),
+                            .reset (reset),
+                            .clk_2f  (clk_2f),
+                            .clk_f (clk_f)
+
+);
+
+	phy_tx tx (/*AUTOINST*/);
+    phy_rx rx (/*AUTOINST*/);
+
+endmodule
