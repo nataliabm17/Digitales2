@@ -3,6 +3,7 @@
 `include "probador.v"
 `include "ParaleloSerie.v"
 `include "ParaleloSerie_Est.v"
+`include "cmos_cells.v"
 //`include "Generador128f.v"
 module bancoprueba;
 

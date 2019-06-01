@@ -22,6 +22,8 @@ module probador(
     data_inP<='hBB;
     @(posedge clk_f)
     data_inP<='hAC;
+    @(posedge clk_f)
+    valid_in <=0;
 
 
 

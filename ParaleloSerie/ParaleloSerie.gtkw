@@ -1,0 +1,49 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Sat Jun  1 13:39:46 2019
+[*]
+[dumpfile] "/home/est/Escritorio/ParaleloSerie/ParaleloSerie.vcd"
+[dumpfile_mtime] "Sat Jun  1 13:36:36 2019"
+[dumpfile_size] 25726
+[savefile] "/home/est/Escritorio/ParaleloSerie/ParaleloSerie.gtkw"
+[timestart] 0
+[size] 1000 606
+[pos] -480 -211
+*-15.914380 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] bancoprueba.
+[sst_width] 223
+[signals_width] 182
+[sst_expanded] 1
+[sst_vpaned_height] 162
+@200
+-CONDUCTUAL
+@28
+bancoprueba.ParaleloSerie.clk_8f
+bancoprueba.ParaleloSerie.clk_f
+@22
+bancoprueba.ParaleloSerie.data_inP[7:0]
+@28
+bancoprueba.ParaleloSerie.valid_in
+@22
+bancoprueba.ParaleloSerie.data2sendF[7:0]
+bancoprueba.ParaleloSerie.data2send[7:0]
+@28
+bancoprueba.ParaleloSerie.data_outS
+bancoprueba.ParaleloSerie.reset
+@200
+-ESTRUCTURAL
+@28
+bancoprueba.ParaleloSerie_Est_.clk_8f
+bancoprueba.ParaleloSerie_Est_.clk_f
+@22
+bancoprueba.ParaleloSerie_Est_.data_inP[7:0]
+@28
+bancoprueba.ParaleloSerie_Est_.valid_in
+@22
+bancoprueba.ParaleloSerie_Est_.data2send_estF[7:0]
+bancoprueba.ParaleloSerie_Est_.data2send_est[7:0]
+@28
+bancoprueba.ParaleloSerie_Est_.data_outS_est
+bancoprueba.ParaleloSerie_Est_.reset
+[pattern_trace] 1
+[pattern_trace] 0
