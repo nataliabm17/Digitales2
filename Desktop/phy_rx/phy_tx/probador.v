@@ -1,0 +1,138 @@
+module probador( 
+  output reg clk_2f,
+  output reg clk_8f,
+  output reg clk_f,
+  output reg reset,
+  output reg[7:0] data_in0,
+  output reg[7:0] data_in1,
+  output reg valid_in0,
+  output reg valid_in1,
+  input[7:0] data2send0,
+  input[7:0] data2send1,
+  input  data_outS0,
+  input data_outS1,
+  input [7:0] data2send0_synth,
+  input [7:0] data2send1_synth,
+  input data_outS0_synth,
+  input data_outS1_synth
+);	
+	initial begin
+		$dumpfile("phy.vcd");
+		$dumpvars;			
+		reset = 0;
+		valid_in0 = 0;
+		valid_in1 = 0;
+		data_in0 = 8'b0;
+		data_in1 = 8'b0;
+		
+		@(posedge clk_2f);
+		
+		@(posedge clk_2f);
+
+		@(posedge clk_2f);
+		reset <= 1;
+		data_in0 <= $random;
+		data_in1 <= $random;
+		valid_in0<=1;
+		
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+		//valid_in0 <= 1;
+		
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+		
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+		//valid_in1 <= 1;
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+		valid_in1 <= 0; 
+		valid_in0 <= 0;
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+		valid_in1 <= 1; 
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+		valid_in0 <= 1;
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+		valid_in0 <= 1;
+		valid_in1 <= 1; 
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+		valid_in0 <= 1;
+		valid_in1 <= 1; 
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+
+		@(posedge clk_2f);
+		data_in0 <= $random;
+		data_in1 <= $random;
+
+		$finish;	
+	end
+
+	initial	clk_2f 	<= 1;			
+	always	#4 clk_2f 	<= ~clk_2f;	
+     initial	clk_8f <= 1;
+	always	#1 clk_8f <= ~clk_8f;
+    initial clk_f <= 1;
+      always #8 clk_f<= ~clk_f;
+endmodule
+
