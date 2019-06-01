@@ -1,0 +1,20 @@
+`timescale 	1ns				/ 100ps
+`include "phy.v"
+`include "phy_synth.v"
+`include "probador.v"
+`include "cmos_cells.v"
+
+module BancoPruebas; 
+
+	wire[7:0] data_out_0,data_in0, data_in1, data_out_0_synth, data_out_1_synth;
+	wire valid_out_0, valid_out_1, reset, valid_out_0_synth, valid_out_1_synth, clk_8f;
+
+	phy phy(/*AUTOINST*/);
+
+	phy_synth synth(/*AUTOINST*/);
+	
+	probador probador(/*AUTOINST*/);
+
+
+endmodule
+
