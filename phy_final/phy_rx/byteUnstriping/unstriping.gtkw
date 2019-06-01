@@ -1,36 +1,52 @@
 [*]
-[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
-[*] Sat May 18 01:29:01 2019
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Sat Jun  1 14:21:17 2019
 [*]
-[dumpfile] "/home/est/Escritorio/U/DigitalesII/Proyecto/byteUnstriping/unstriping.vcd"
-[dumpfile_mtime] "Sat May 18 01:28:16 2019"
-[dumpfile_size] 15676
-[savefile] "/home/est/Escritorio/U/DigitalesII/Proyecto/byteUnstriping/unstriping.gtkw"
+[dumpfile] "/home/daniela/phy_final/phy_rx/byteUnstriping/unstriping.vcd"
+[dumpfile_mtime] "Sat Jun  1 14:19:52 2019"
+[dumpfile_size] 15872
+[savefile] "/home/daniela/phy_final/phy_rx/byteUnstriping/unstriping.gtkw"
 [timestart] 0
-[size] 1000 600
-[pos] -454 -293
-*-13.395045 2470 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
-[sst_width] 223
-[signals_width] 182
+[size] 2017 1126
+[pos] -401 -263
+*-12.341654 2470 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoPruebas.
+[sst_width] 404
+[signals_width] 410
 [sst_expanded] 1
-[sst_vpaned_height] 160
+[sst_vpaned_height] 430
+@200
+-Conductual
 @28
-BancoPruebas.clk_2f
-BancoPruebas.clk_f
-BancoPruebas.reset
+BancoPruebas.unstriping.clk_2f
+BancoPruebas.unstriping.clk_f
+BancoPruebas.unstriping.contador
 @22
-BancoPruebas.lane_0[7:0]
+BancoPruebas.unstriping.lane_0[7:0]
+BancoPruebas.unstriping.lane_1[7:0]
+BancoPruebas.unstriping.data_out[7:0]
 @28
-BancoPruebas.valid_0
+BancoPruebas.unstriping.reset
+BancoPruebas.unstriping.selector
+BancoPruebas.unstriping.valid_0
+BancoPruebas.unstriping.valid_1
+BancoPruebas.unstriping.valid_out
+@200
+-Estructural
+@28
+BancoPruebas.synth.clk_2f
+BancoPruebas.synth.clk_f
+BancoPruebas.synth.contador
 @22
-BancoPruebas.lane_1[7:0]
+BancoPruebas.synth.lane_0[7:0]
+BancoPruebas.synth.lane_1[7:0]
+@23
+BancoPruebas.synth.data_out_synth[7:0]
 @28
-BancoPruebas.valid_1
-@22
-BancoPruebas.data_out[7:0]
-BancoPruebas.data_out_synth[7:0]
-@28
-BancoPruebas.valid_out
-BancoPruebas.valid_out_synth
+BancoPruebas.synth.reset
+BancoPruebas.synth.selector
+BancoPruebas.synth.valid_0
+BancoPruebas.synth.valid_1
+BancoPruebas.synth.valid_out_synth
 [pattern_trace] 1
 [pattern_trace] 0
