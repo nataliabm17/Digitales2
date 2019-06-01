@@ -6,6 +6,7 @@
 `include "cmos_cells.v"
 module bancoprueba; 
     wire clk_2f;
+    wire clk_f;
     wire valid_in;
     wire [7:0]data_in;
     wire reset;
@@ -26,12 +27,14 @@ byte_striping cond (/*AUTOINST*/
 		    .valid_1		(valid_1),
 		    // Inputs
 		    .clk_2f		(clk_2f),
+            .clk_f (clk_f),
 		    .valid_in		(valid_in),
 		    .data_in		(data_in[7:0]),
 		    .reset		(reset));
 probador prob (/*AUTOINST*/
 	       // Outputs
 	       .clk_2f			(clk_2f),
+            .clk_f (clk_f),
 	       .valid_in		(valid_in),
 	       .data_in			(data_in[7:0]),
 	       .reset			(reset),
@@ -54,6 +57,7 @@ byte_striping_synth est (/*AUTOINST*/
 			 .valid_1_synth		(valid_1_synth),
 			 // Inputs
 			 .clk_2f		(clk_2f),
+            .clk_f (clk_f),
 			 .data_in		(data_in[7:0]),
 			 .reset			(reset),
 			 .valid_in		(valid_in)); 

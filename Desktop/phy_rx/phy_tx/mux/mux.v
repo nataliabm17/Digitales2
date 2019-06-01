@@ -1,0 +1,66 @@
+module mux (
+	input f2,
+	input reset_L,
+	output reg[7:0] data_out,
+	input [7:0] data_in0,
+	input [7:0] data_in1,
+	input valid_in0,
+	input valid_in1,
+	output reg valid_out);
+	
+	reg selector, selector2;
+
+	always @(posedge f2) begin
+		if(!reset_L) begin
+			data_out = 0;
+			selector2 = 0;
+			selector = 0;
+			valid_out = 0;
+		end
+		else begin
+			if (valid_in0 == 1 && valid_in1 == 0)begin
+				data_out = data_in0;
+				selector = 0;
+				valid_out = 1;
+			end
+			else if (valid_in0 == 0 && valid_in1 == 1)begin
+				data_out = data_in1;
+				selector = 1;
+				valid_out = 1;
+			end
+			if (valid_in0 == 0 && valid_in1 == 0)begin
+				valid_out = 0;
+			end
+			if (valid_in0 == 1 && valid_in1 == 1)begin
+				if (valid_out) begin
+					if (selector) begin
+						data_out = data_in1;
+						valid_out = 1;
+						selector = 1;
+					end		
+					else begin
+						data_out = data_in0;
+						valid_out = 1;
+						selector = 0;
+					end
+				end
+				else if(!valid_out)begin
+					if (selector2) begin			
+						data_out = data_in1;
+						valid_out = 1;
+						selector2 = 0;
+						selector = 1;
+					end		
+					else begin
+						data_out = data_in0;
+						valid_out = 1;
+						selector2 = 1;
+						selector = 0;
+					end
+				end
+			end
+		end
+	end
+
+
+endmodule

@@ -2,69 +2,80 @@
 
 (* top =  1  *)
 (* src = "byte_striping_synth.v:1" *)
-module byte_striping_synth(clk_2f, valid_in, data_in, reset, lane_0_synth, lane_1_synth, valid_0_synth, valid_1_synth);
-  (* src = "byte_striping_synth.v:12" *)
+module byte_striping_synth(clk_2f, clk_f, valid_in, data_in, reset, lane_0_synth, lane_1_synth, valid_0_synth, valid_1_synth);
+  (* src = "byte_striping_synth.v:53" *)
   wire _000_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire _001_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:14" *)
   wire [7:0] _002_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire [7:0] _003_;
-  (* src = "byte_striping_synth.v:12" *)
-  wire _004_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
+  wire [7:0] _004_;
+  (* src = "byte_striping_synth.v:14" *)
   wire _005_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:39" *)
   wire _006_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:23" *)
   wire _007_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire _008_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire _009_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:14" *)
   wire _010_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:14" *)
   wire _011_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:14" *)
   wire _012_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:14" *)
   wire _013_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:14" *)
   wire _014_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:14" *)
   wire _015_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:14" *)
   wire _016_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:14" *)
   wire _017_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire _018_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire _019_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire _020_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire _021_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire _022_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire _023_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire _024_;
-  (* src = "byte_striping_synth.v:12" *)
+  (* src = "byte_striping_synth.v:53" *)
   wire _025_;
+  (* src = "byte_striping_synth.v:53" *)
   wire _026_;
+  (* src = "byte_striping_synth.v:53" *)
   wire _027_;
+  (* src = "byte_striping_synth.v:53" *)
   wire _028_;
+  (* src = "byte_striping_synth.v:53" *)
   wire _029_;
+  (* src = "byte_striping_synth.v:53" *)
   wire _030_;
+  (* src = "byte_striping_synth.v:53" *)
   wire _031_;
+  (* src = "byte_striping_synth.v:53" *)
   wire _032_;
+  (* src = "byte_striping_synth.v:53" *)
   wire _033_;
+  (* src = "byte_striping_synth.v:14" *)
   wire _034_;
+  (* src = "byte_striping_synth.v:39" *)
   wire _035_;
+  (* src = "byte_striping_synth.v:23" *)
   wire _036_;
   wire _037_;
   wire _038_;
@@ -134,646 +145,821 @@ module byte_striping_synth(clk_2f, valid_in, data_in, reset, lane_0_synth, lane_
   wire _102_;
   wire _103_;
   wire _104_;
-  (* src = "byte_striping_synth.v:24" *)
+  wire _105_;
+  wire _106_;
+  wire _107_;
+  wire _108_;
+  wire _109_;
+  wire _110_;
+  wire _111_;
+  wire _112_;
+  wire _113_;
+  wire _114_;
+  wire _115_;
+  wire _116_;
+  wire _117_;
+  wire _118_;
+  wire _119_;
+  wire _120_;
+  wire _121_;
+  wire _122_;
+  wire _123_;
+  wire _124_;
+  wire _125_;
+  (* src = "byte_striping_synth.v:67" *)
   (* unused_bits = "0" *)
-  wire [31:0] _105_;
-  (* src = "byte_striping_synth.v:25" *)
+  wire [31:0] _126_;
+  (* src = "byte_striping_synth.v:68" *)
   (* unused_bits = "0" *)
-  wire [31:0] _106_;
+  wire [31:0] _127_;
   (* src = "byte_striping_synth.v:2" *)
   input clk_2f;
-  (* src = "byte_striping_synth.v:11" *)
-  wire contador0;
-  (* src = "byte_striping_synth.v:11" *)
-  wire contador1;
-  (* src = "byte_striping_synth.v:4" *)
-  input [7:0] data_in;
-  (* src = "byte_striping_synth.v:6" *)
-  output [7:0] lane_0_synth;
-  (* src = "byte_striping_synth.v:7" *)
-  output [7:0] lane_1_synth;
-  (* src = "byte_striping_synth.v:5" *)
-  input reset;
-  (* src = "byte_striping_synth.v:8" *)
-  output valid_0_synth;
-  (* src = "byte_striping_synth.v:9" *)
-  output valid_1_synth;
   (* src = "byte_striping_synth.v:3" *)
+  input clk_f;
+  (* src = "byte_striping_synth.v:12" *)
+  wire contador0;
+  (* src = "byte_striping_synth.v:12" *)
+  wire contador1;
+  (* src = "byte_striping_synth.v:5" *)
+  input [7:0] data_in;
+  (* src = "byte_striping_synth.v:13" *)
+  wire [7:0] in;
+  (* src = "byte_striping_synth.v:7" *)
+  output [7:0] lane_0_synth;
+  (* src = "byte_striping_synth.v:8" *)
+  output [7:0] lane_1_synth;
+  (* src = "byte_striping_synth.v:6" *)
+  input reset;
+  (* src = "byte_striping_synth.v:12" *)
+  wire v_in;
+  (* src = "byte_striping_synth.v:9" *)
+  output valid_0_synth;
+  (* src = "byte_striping_synth.v:10" *)
+  output valid_1_synth;
+  (* src = "byte_striping_synth.v:4" *)
   input valid_in;
-  NOT _107_ (
-    .A(valid_in),
-    .Y(_060_)
-  );
-  NOT _108_ (
-    .A(contador0),
-    .Y(_061_)
-  );
-  NOT _109_ (
-    .A(reset),
-    .Y(_062_)
-  );
-  NOT _110_ (
-    .A(lane_1_synth[0]),
-    .Y(_063_)
-  );
-  NOT _111_ (
-    .A(lane_1_synth[1]),
-    .Y(_064_)
-  );
-  NOT _112_ (
-    .A(lane_1_synth[2]),
-    .Y(_065_)
-  );
-  NOT _113_ (
-    .A(lane_1_synth[3]),
-    .Y(_066_)
-  );
-  NOT _114_ (
-    .A(lane_1_synth[4]),
-    .Y(_067_)
-  );
-  NOT _115_ (
-    .A(lane_1_synth[5]),
-    .Y(_068_)
-  );
-  NOT _116_ (
-    .A(lane_1_synth[6]),
-    .Y(_069_)
-  );
-  NOT _117_ (
-    .A(lane_1_synth[7]),
-    .Y(_070_)
-  );
-  NOT _118_ (
-    .A(data_in[0]),
-    .Y(_071_)
-  );
-  NOT _119_ (
-    .A(data_in[1]),
-    .Y(_072_)
-  );
-  NOT _120_ (
-    .A(data_in[2]),
-    .Y(_073_)
-  );
-  NOT _121_ (
-    .A(data_in[3]),
-    .Y(_074_)
-  );
-  NOT _122_ (
-    .A(data_in[4]),
-    .Y(_075_)
-  );
-  NOT _123_ (
-    .A(data_in[5]),
-    .Y(_076_)
-  );
-  NOT _124_ (
-    .A(data_in[6]),
-    .Y(_077_)
-  );
-  NOT _125_ (
-    .A(data_in[7]),
-    .Y(_078_)
-  );
-  NOT _126_ (
-    .A(contador1),
-    .Y(_079_)
-  );
-  NOR _127_ (
-    .A(_060_),
-    .B(_061_),
-    .Y(_080_)
-  );
-  NOR _128_ (
-    .A(valid_in),
-    .B(contador0),
-    .Y(_081_)
-  );
-  NOT _129_ (
-    .A(_081_),
-    .Y(_082_)
-  );
-  NAND _130_ (
-    .A(reset),
-    .B(_082_),
-    .Y(_083_)
-  );
-  NOR _131_ (
-    .A(_080_),
-    .B(_083_),
-    .Y(_000_)
-  );
-  NOR _132_ (
-    .A(_060_),
-    .B(contador1),
-    .Y(_084_)
-  );
-  NAND _133_ (
-    .A(valid_in),
-    .B(_079_),
-    .Y(_085_)
-  );
-  NOR _134_ (
-    .A(_080_),
-    .B(_084_),
-    .Y(_086_)
-  );
-  NOR _135_ (
-    .A(data_in[0]),
-    .B(_086_),
-    .Y(_087_)
-  );
-  NAND _136_ (
-    .A(_063_),
-    .B(_086_),
-    .Y(_088_)
-  );
-  NAND _137_ (
-    .A(reset),
-    .B(_088_),
-    .Y(_089_)
-  );
-  NOR _138_ (
-    .A(_087_),
-    .B(_089_),
-    .Y(_003_[0])
-  );
-  NOR _139_ (
-    .A(data_in[1]),
-    .B(_086_),
-    .Y(_090_)
-  );
-  NAND _140_ (
-    .A(_064_),
-    .B(_086_),
-    .Y(_091_)
-  );
-  NAND _141_ (
-    .A(reset),
-    .B(_091_),
-    .Y(_092_)
-  );
-  NOR _142_ (
-    .A(_090_),
-    .B(_092_),
-    .Y(_003_[1])
-  );
-  NOR _143_ (
-    .A(data_in[2]),
-    .B(_086_),
-    .Y(_093_)
-  );
-  NAND _144_ (
-    .A(_065_),
-    .B(_086_),
-    .Y(_094_)
-  );
-  NAND _145_ (
-    .A(reset),
-    .B(_094_),
-    .Y(_095_)
-  );
-  NOR _146_ (
-    .A(_093_),
-    .B(_095_),
-    .Y(_003_[2])
-  );
-  NOR _147_ (
-    .A(data_in[3]),
-    .B(_086_),
-    .Y(_096_)
-  );
-  NAND _148_ (
-    .A(_066_),
-    .B(_086_),
-    .Y(_097_)
-  );
-  NAND _149_ (
-    .A(reset),
-    .B(_097_),
+  NOT _128_ (
+    .A(v_in),
     .Y(_098_)
   );
-  NOR _150_ (
-    .A(_096_),
-    .B(_098_),
-    .Y(_003_[3])
-  );
-  NOR _151_ (
-    .A(data_in[4]),
-    .B(_086_),
+  NOT _129_ (
+    .A(contador0),
     .Y(_099_)
   );
-  NAND _152_ (
-    .A(_067_),
-    .B(_086_),
+  NOT _130_ (
+    .A(contador1),
     .Y(_100_)
   );
-  NAND _153_ (
-    .A(reset),
-    .B(_100_),
+  NOT _131_ (
+    .A(in[0]),
     .Y(_101_)
   );
-  NOR _154_ (
-    .A(_099_),
-    .B(_101_),
-    .Y(_003_[4])
-  );
-  NOR _155_ (
-    .A(data_in[5]),
-    .B(_086_),
+  NOT _132_ (
+    .A(in[1]),
     .Y(_102_)
   );
-  NAND _156_ (
-    .A(_068_),
-    .B(_086_),
+  NOT _133_ (
+    .A(in[2]),
     .Y(_103_)
   );
-  NAND _157_ (
-    .A(reset),
-    .B(_103_),
+  NOT _134_ (
+    .A(in[3]),
     .Y(_104_)
   );
-  NOR _158_ (
-    .A(_102_),
-    .B(_104_),
-    .Y(_003_[5])
+  NOT _135_ (
+    .A(in[4]),
+    .Y(_105_)
   );
-  NOR _159_ (
-    .A(data_in[6]),
-    .B(_086_),
-    .Y(_026_)
+  NOT _136_ (
+    .A(in[5]),
+    .Y(_106_)
   );
-  NAND _160_ (
-    .A(_069_),
-    .B(_086_),
-    .Y(_027_)
+  NOT _137_ (
+    .A(in[6]),
+    .Y(_107_)
   );
-  NAND _161_ (
-    .A(reset),
-    .B(_027_),
-    .Y(_028_)
+  NOT _138_ (
+    .A(in[7]),
+    .Y(_108_)
   );
-  NOR _162_ (
-    .A(_026_),
-    .B(_028_),
-    .Y(_003_[6])
+  NOT _139_ (
+    .A(lane_1_synth[0]),
+    .Y(_109_)
   );
-  NOR _163_ (
-    .A(data_in[7]),
-    .B(_086_),
-    .Y(_029_)
+  NOT _140_ (
+    .A(lane_1_synth[1]),
+    .Y(_110_)
   );
-  NAND _164_ (
-    .A(_070_),
-    .B(_086_),
-    .Y(_030_)
+  NOT _141_ (
+    .A(lane_1_synth[2]),
+    .Y(_111_)
   );
-  NAND _165_ (
-    .A(reset),
-    .B(_030_),
-    .Y(_031_)
+  NOT _142_ (
+    .A(lane_1_synth[3]),
+    .Y(_112_)
   );
-  NOR _166_ (
-    .A(_029_),
-    .B(_031_),
-    .Y(_003_[7])
+  NOT _143_ (
+    .A(lane_1_synth[4]),
+    .Y(_113_)
   );
-  NOR _167_ (
-    .A(_061_),
-    .B(contador1),
-    .Y(_032_)
+  NOT _144_ (
+    .A(lane_1_synth[5]),
+    .Y(_114_)
   );
-  NOR _168_ (
-    .A(_060_),
-    .B(_032_),
-    .Y(_033_)
+  NOT _145_ (
+    .A(lane_1_synth[6]),
+    .Y(_115_)
   );
-  NOR _169_ (
-    .A(lane_0_synth[0]),
-    .B(_033_),
-    .Y(_034_)
+  NOT _146_ (
+    .A(lane_1_synth[7]),
+    .Y(_116_)
   );
-  NAND _170_ (
-    .A(_071_),
-    .B(_033_),
-    .Y(_035_)
-  );
-  NAND _171_ (
-    .A(reset),
-    .B(_035_),
-    .Y(_036_)
-  );
-  NOR _172_ (
-    .A(_034_),
-    .B(_036_),
-    .Y(_002_[0])
-  );
-  NOR _173_ (
-    .A(lane_0_synth[1]),
-    .B(_033_),
+  NOT _147_ (
+    .A(clk_f),
     .Y(_037_)
   );
-  NAND _174_ (
-    .A(_072_),
-    .B(_033_),
+  NAND _148_ (
+    .A(v_in),
+    .B(contador0),
+    .Y(_117_)
+  );
+  NOT _149_ (
+    .A(_117_),
+    .Y(_118_)
+  );
+  NAND _150_ (
+    .A(v_in),
+    .B(reset),
+    .Y(_119_)
+  );
+  NAND _151_ (
+    .A(contador0),
+    .B(reset),
+    .Y(_120_)
+  );
+  NAND _152_ (
+    .A(_119_),
+    .B(_120_),
+    .Y(_121_)
+  );
+  NOR _153_ (
+    .A(contador0),
+    .B(_119_),
+    .Y(_006_)
+  );
+  NAND _154_ (
+    .A(_117_),
+    .B(_121_),
+    .Y(_122_)
+  );
+  NOT _155_ (
+    .A(_122_),
+    .Y(_000_)
+  );
+  NOR _156_ (
+    .A(_098_),
+    .B(contador1),
+    .Y(_123_)
+  );
+  NOR _157_ (
+    .A(v_in),
+    .B(_100_),
+    .Y(_124_)
+  );
+  NOR _158_ (
+    .A(_123_),
+    .B(_124_),
+    .Y(_125_)
+  );
+  NAND _159_ (
+    .A(reset),
+    .B(_125_),
+    .Y(_001_)
+  );
+  NOR _160_ (
+    .A(_099_),
+    .B(contador1),
     .Y(_038_)
   );
-  NAND _175_ (
-    .A(reset),
+  NOR _161_ (
+    .A(_098_),
     .B(_038_),
     .Y(_039_)
   );
-  NOR _176_ (
-    .A(_037_),
+  NOR _162_ (
+    .A(lane_0_synth[0]),
     .B(_039_),
-    .Y(_002_[1])
-  );
-  NOR _177_ (
-    .A(lane_0_synth[2]),
-    .B(_033_),
     .Y(_040_)
   );
-  NAND _178_ (
-    .A(_073_),
-    .B(_033_),
+  NAND _163_ (
+    .A(_101_),
+    .B(_039_),
     .Y(_041_)
   );
-  NAND _179_ (
+  NAND _164_ (
     .A(reset),
     .B(_041_),
     .Y(_042_)
   );
-  NOR _180_ (
+  NOR _165_ (
     .A(_040_),
     .B(_042_),
-    .Y(_002_[2])
+    .Y(_003_[0])
   );
-  NOR _181_ (
-    .A(lane_0_synth[3]),
-    .B(_033_),
+  NOR _166_ (
+    .A(lane_0_synth[1]),
+    .B(_039_),
     .Y(_043_)
   );
-  NAND _182_ (
-    .A(_074_),
-    .B(_033_),
+  NAND _167_ (
+    .A(_102_),
+    .B(_039_),
     .Y(_044_)
   );
-  NAND _183_ (
+  NAND _168_ (
     .A(reset),
     .B(_044_),
     .Y(_045_)
   );
-  NOR _184_ (
+  NOR _169_ (
     .A(_043_),
     .B(_045_),
-    .Y(_002_[3])
+    .Y(_003_[1])
   );
-  NOR _185_ (
-    .A(lane_0_synth[4]),
-    .B(_033_),
+  NOR _170_ (
+    .A(lane_0_synth[2]),
+    .B(_039_),
     .Y(_046_)
   );
-  NAND _186_ (
-    .A(_075_),
-    .B(_033_),
+  NAND _171_ (
+    .A(_103_),
+    .B(_039_),
     .Y(_047_)
   );
-  NAND _187_ (
+  NAND _172_ (
     .A(reset),
     .B(_047_),
     .Y(_048_)
   );
-  NOR _188_ (
+  NOR _173_ (
     .A(_046_),
     .B(_048_),
-    .Y(_002_[4])
+    .Y(_003_[2])
   );
-  NOR _189_ (
-    .A(lane_0_synth[5]),
-    .B(_033_),
+  NOR _174_ (
+    .A(lane_0_synth[3]),
+    .B(_039_),
     .Y(_049_)
   );
-  NAND _190_ (
-    .A(_076_),
-    .B(_033_),
+  NAND _175_ (
+    .A(_104_),
+    .B(_039_),
     .Y(_050_)
   );
-  NAND _191_ (
+  NAND _176_ (
     .A(reset),
     .B(_050_),
     .Y(_051_)
   );
-  NOR _192_ (
+  NOR _177_ (
     .A(_049_),
     .B(_051_),
-    .Y(_002_[5])
+    .Y(_003_[3])
   );
-  NOR _193_ (
-    .A(lane_0_synth[6]),
-    .B(_033_),
+  NOR _178_ (
+    .A(lane_0_synth[4]),
+    .B(_039_),
     .Y(_052_)
   );
-  NAND _194_ (
-    .A(_077_),
-    .B(_033_),
+  NAND _179_ (
+    .A(_105_),
+    .B(_039_),
     .Y(_053_)
   );
-  NAND _195_ (
+  NAND _180_ (
     .A(reset),
     .B(_053_),
     .Y(_054_)
   );
-  NOR _196_ (
+  NOR _181_ (
     .A(_052_),
     .B(_054_),
-    .Y(_002_[6])
+    .Y(_003_[4])
   );
-  NOR _197_ (
-    .A(lane_0_synth[7]),
-    .B(_033_),
+  NOR _182_ (
+    .A(lane_0_synth[5]),
+    .B(_039_),
     .Y(_055_)
   );
-  NAND _198_ (
-    .A(_078_),
-    .B(_033_),
+  NAND _183_ (
+    .A(_106_),
+    .B(_039_),
     .Y(_056_)
   );
-  NAND _199_ (
+  NAND _184_ (
     .A(reset),
     .B(_056_),
     .Y(_057_)
   );
-  NOR _200_ (
+  NOR _185_ (
     .A(_055_),
     .B(_057_),
-    .Y(_002_[7])
+    .Y(_003_[5])
+  );
+  NOR _186_ (
+    .A(lane_0_synth[6]),
+    .B(_039_),
+    .Y(_058_)
+  );
+  NAND _187_ (
+    .A(_107_),
+    .B(_039_),
+    .Y(_059_)
+  );
+  NAND _188_ (
+    .A(reset),
+    .B(_059_),
+    .Y(_060_)
+  );
+  NOR _189_ (
+    .A(_058_),
+    .B(_060_),
+    .Y(_003_[6])
+  );
+  NOR _190_ (
+    .A(lane_0_synth[7]),
+    .B(_039_),
+    .Y(_061_)
+  );
+  NAND _191_ (
+    .A(_108_),
+    .B(_039_),
+    .Y(_062_)
+  );
+  NAND _192_ (
+    .A(reset),
+    .B(_062_),
+    .Y(_063_)
+  );
+  NOR _193_ (
+    .A(_061_),
+    .B(_063_),
+    .Y(_003_[7])
+  );
+  NOR _194_ (
+    .A(_118_),
+    .B(_123_),
+    .Y(_064_)
+  );
+  NOR _195_ (
+    .A(in[0]),
+    .B(_064_),
+    .Y(_065_)
+  );
+  NAND _196_ (
+    .A(_109_),
+    .B(_064_),
+    .Y(_066_)
+  );
+  NAND _197_ (
+    .A(reset),
+    .B(_066_),
+    .Y(_067_)
+  );
+  NOR _198_ (
+    .A(_065_),
+    .B(_067_),
+    .Y(_004_[0])
+  );
+  NOR _199_ (
+    .A(in[1]),
+    .B(_064_),
+    .Y(_068_)
+  );
+  NAND _200_ (
+    .A(_110_),
+    .B(_064_),
+    .Y(_069_)
   );
   NAND _201_ (
     .A(reset),
-    .B(_085_),
-    .Y(_058_)
+    .B(_069_),
+    .Y(_070_)
   );
   NOR _202_ (
-    .A(_060_),
-    .B(_058_),
-    .Y(_004_)
+    .A(_068_),
+    .B(_070_),
+    .Y(_004_[1])
   );
   NOR _203_ (
-    .A(contador1),
-    .B(_058_),
-    .Y(_059_)
+    .A(in[2]),
+    .B(_064_),
+    .Y(_071_)
   );
-  NOR _204_ (
-    .A(_004_),
-    .B(_059_),
-    .Y(_001_)
+  NAND _204_ (
+    .A(_111_),
+    .B(_064_),
+    .Y(_072_)
   );
-  NOR _205_ (
-    .A(_062_),
+  NAND _205_ (
+    .A(reset),
+    .B(_072_),
+    .Y(_073_)
+  );
+  NOR _206_ (
+    .A(_071_),
+    .B(_073_),
+    .Y(_004_[2])
+  );
+  NOR _207_ (
+    .A(in[3]),
+    .B(_064_),
+    .Y(_074_)
+  );
+  NAND _208_ (
+    .A(_112_),
+    .B(_064_),
+    .Y(_075_)
+  );
+  NAND _209_ (
+    .A(reset),
+    .B(_075_),
+    .Y(_076_)
+  );
+  NOR _210_ (
+    .A(_074_),
+    .B(_076_),
+    .Y(_004_[3])
+  );
+  NOR _211_ (
+    .A(in[4]),
+    .B(_064_),
+    .Y(_077_)
+  );
+  NAND _212_ (
+    .A(_113_),
+    .B(_064_),
+    .Y(_078_)
+  );
+  NAND _213_ (
+    .A(reset),
+    .B(_078_),
+    .Y(_079_)
+  );
+  NOR _214_ (
+    .A(_077_),
+    .B(_079_),
+    .Y(_004_[4])
+  );
+  NOR _215_ (
+    .A(in[5]),
+    .B(_064_),
+    .Y(_080_)
+  );
+  NAND _216_ (
+    .A(_114_),
+    .B(_064_),
+    .Y(_081_)
+  );
+  NAND _217_ (
+    .A(reset),
+    .B(_081_),
+    .Y(_082_)
+  );
+  NOR _218_ (
+    .A(_080_),
+    .B(_082_),
+    .Y(_004_[5])
+  );
+  NOR _219_ (
+    .A(in[6]),
+    .B(_064_),
+    .Y(_083_)
+  );
+  NAND _220_ (
+    .A(_115_),
+    .B(_064_),
+    .Y(_084_)
+  );
+  NAND _221_ (
+    .A(reset),
+    .B(_084_),
+    .Y(_085_)
+  );
+  NOR _222_ (
+    .A(_083_),
     .B(_085_),
+    .Y(_004_[6])
+  );
+  NOR _223_ (
+    .A(in[7]),
+    .B(_064_),
+    .Y(_086_)
+  );
+  NAND _224_ (
+    .A(_116_),
+    .B(_064_),
+    .Y(_087_)
+  );
+  NAND _225_ (
+    .A(reset),
+    .B(_087_),
+    .Y(_088_)
+  );
+  NOR _226_ (
+    .A(_086_),
+    .B(_088_),
+    .Y(_004_[7])
+  );
+  NOR _227_ (
+    .A(contador1),
+    .B(_119_),
+    .Y(_007_)
+  );
+  NAND _228_ (
+    .A(reset),
+    .B(data_in[0]),
+    .Y(_089_)
+  );
+  NOT _229_ (
+    .A(_089_),
+    .Y(_002_[0])
+  );
+  NAND _230_ (
+    .A(reset),
+    .B(data_in[1]),
+    .Y(_090_)
+  );
+  NOT _231_ (
+    .A(_090_),
+    .Y(_002_[1])
+  );
+  NAND _232_ (
+    .A(reset),
+    .B(data_in[2]),
+    .Y(_091_)
+  );
+  NOT _233_ (
+    .A(_091_),
+    .Y(_002_[2])
+  );
+  NAND _234_ (
+    .A(reset),
+    .B(data_in[3]),
+    .Y(_092_)
+  );
+  NOT _235_ (
+    .A(_092_),
+    .Y(_002_[3])
+  );
+  NAND _236_ (
+    .A(reset),
+    .B(data_in[4]),
+    .Y(_093_)
+  );
+  NOT _237_ (
+    .A(_093_),
+    .Y(_002_[4])
+  );
+  NAND _238_ (
+    .A(reset),
+    .B(data_in[5]),
+    .Y(_094_)
+  );
+  NOT _239_ (
+    .A(_094_),
+    .Y(_002_[5])
+  );
+  NAND _240_ (
+    .A(reset),
+    .B(data_in[6]),
+    .Y(_095_)
+  );
+  NOT _241_ (
+    .A(_095_),
+    .Y(_002_[6])
+  );
+  NAND _242_ (
+    .A(reset),
+    .B(data_in[7]),
+    .Y(_096_)
+  );
+  NOT _243_ (
+    .A(_096_),
+    .Y(_002_[7])
+  );
+  NAND _244_ (
+    .A(reset),
+    .B(valid_in),
+    .Y(_097_)
+  );
+  NOT _245_ (
+    .A(_097_),
     .Y(_005_)
   );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _206_ (
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _246_ (
     .C(clk_2f),
-    .D(_004_),
-    .Q(valid_0_synth)
+    .D(_004_[0]),
+    .Q(lane_1_synth[0])
   );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _207_ (
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _247_ (
     .C(clk_2f),
-    .D(_005_),
-    .Q(valid_1_synth)
+    .D(_004_[1]),
+    .Q(lane_1_synth[1])
   );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _208_ (
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _248_ (
+    .C(clk_2f),
+    .D(_004_[2]),
+    .Q(lane_1_synth[2])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _249_ (
+    .C(clk_2f),
+    .D(_004_[3]),
+    .Q(lane_1_synth[3])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _250_ (
+    .C(clk_2f),
+    .D(_004_[4]),
+    .Q(lane_1_synth[4])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _251_ (
+    .C(clk_2f),
+    .D(_004_[5]),
+    .Q(lane_1_synth[5])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _252_ (
+    .C(clk_2f),
+    .D(_004_[6]),
+    .Q(lane_1_synth[6])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _253_ (
+    .C(clk_2f),
+    .D(_004_[7]),
+    .Q(lane_1_synth[7])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _254_ (
+    .C(clk_2f),
+    .D(_003_[0]),
+    .Q(lane_0_synth[0])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _255_ (
+    .C(clk_2f),
+    .D(_003_[1]),
+    .Q(lane_0_synth[1])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _256_ (
+    .C(clk_2f),
+    .D(_003_[2]),
+    .Q(lane_0_synth[2])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _257_ (
+    .C(clk_2f),
+    .D(_003_[3]),
+    .Q(lane_0_synth[3])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _258_ (
+    .C(clk_2f),
+    .D(_003_[4]),
+    .Q(lane_0_synth[4])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _259_ (
+    .C(clk_2f),
+    .D(_003_[5]),
+    .Q(lane_0_synth[5])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _260_ (
+    .C(clk_2f),
+    .D(_003_[6]),
+    .Q(lane_0_synth[6])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _261_ (
+    .C(clk_2f),
+    .D(_003_[7]),
+    .Q(lane_0_synth[7])
+  );
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _262_ (
     .C(clk_2f),
     .D(_001_),
     .Q(contador1)
   );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _209_ (
-    .C(clk_2f),
-    .D(_002_[0]),
-    .Q(lane_0_synth[0])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _210_ (
-    .C(clk_2f),
-    .D(_002_[1]),
-    .Q(lane_0_synth[1])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _211_ (
-    .C(clk_2f),
-    .D(_002_[2]),
-    .Q(lane_0_synth[2])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _212_ (
-    .C(clk_2f),
-    .D(_002_[3]),
-    .Q(lane_0_synth[3])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _213_ (
-    .C(clk_2f),
-    .D(_002_[4]),
-    .Q(lane_0_synth[4])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _214_ (
-    .C(clk_2f),
-    .D(_002_[5]),
-    .Q(lane_0_synth[5])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _215_ (
-    .C(clk_2f),
-    .D(_002_[6]),
-    .Q(lane_0_synth[6])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _216_ (
-    .C(clk_2f),
-    .D(_002_[7]),
-    .Q(lane_0_synth[7])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _217_ (
-    .C(clk_2f),
-    .D(_003_[0]),
-    .Q(lane_1_synth[0])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _218_ (
-    .C(clk_2f),
-    .D(_003_[1]),
-    .Q(lane_1_synth[1])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _219_ (
-    .C(clk_2f),
-    .D(_003_[2]),
-    .Q(lane_1_synth[2])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _220_ (
-    .C(clk_2f),
-    .D(_003_[3]),
-    .Q(lane_1_synth[3])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _221_ (
-    .C(clk_2f),
-    .D(_003_[4]),
-    .Q(lane_1_synth[4])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _222_ (
-    .C(clk_2f),
-    .D(_003_[5]),
-    .Q(lane_1_synth[5])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _223_ (
-    .C(clk_2f),
-    .D(_003_[6]),
-    .Q(lane_1_synth[6])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _224_ (
-    .C(clk_2f),
-    .D(_003_[7]),
-    .Q(lane_1_synth[7])
-  );
-  (* src = "byte_striping_synth.v:12" *)
-  DFF _225_ (
+  (* src = "byte_striping_synth.v:53" *)
+  DFF _263_ (
     .C(clk_2f),
     .D(_000_),
     .Q(contador0)
   );
-  assign _006_ = _000_;
-  assign _016_ = _003_[0];
-  assign _017_ = _003_[1];
-  assign _018_ = _003_[2];
-  assign _019_ = _003_[3];
-  assign _020_ = _003_[4];
-  assign _021_ = _003_[5];
-  assign _022_ = _003_[6];
-  assign _023_ = _003_[7];
-  assign _008_ = _002_[0];
-  assign _009_ = _002_[1];
-  assign _010_ = _002_[2];
-  assign _011_ = _002_[3];
-  assign _012_ = _002_[4];
-  assign _013_ = _002_[5];
-  assign _014_ = _002_[6];
-  assign _015_ = _002_[7];
-  assign _007_ = _001_;
-  assign _025_ = _005_;
-  assign _024_ = _004_;
-  assign _105_[31:1] = { 30'h00000000, contador0 };
-  assign _106_[31:1] = { 30'h00000000, contador1 };
+  (* src = "byte_striping_synth.v:39" *)
+  DFF _264_ (
+    .C(clk_f),
+    .D(_006_),
+    .Q(valid_0_synth)
+  );
+  (* src = "byte_striping_synth.v:23" *)
+  DFF _265_ (
+    .C(_037_),
+    .D(_007_),
+    .Q(valid_1_synth)
+  );
+  (* src = "byte_striping_synth.v:14" *)
+  DFF _266_ (
+    .C(clk_2f),
+    .D(_005_),
+    .Q(v_in)
+  );
+  (* src = "byte_striping_synth.v:14" *)
+  DFF _267_ (
+    .C(clk_2f),
+    .D(_002_[0]),
+    .Q(in[0])
+  );
+  (* src = "byte_striping_synth.v:14" *)
+  DFF _268_ (
+    .C(clk_2f),
+    .D(_002_[1]),
+    .Q(in[1])
+  );
+  (* src = "byte_striping_synth.v:14" *)
+  DFF _269_ (
+    .C(clk_2f),
+    .D(_002_[2]),
+    .Q(in[2])
+  );
+  (* src = "byte_striping_synth.v:14" *)
+  DFF _270_ (
+    .C(clk_2f),
+    .D(_002_[3]),
+    .Q(in[3])
+  );
+  (* src = "byte_striping_synth.v:14" *)
+  DFF _271_ (
+    .C(clk_2f),
+    .D(_002_[4]),
+    .Q(in[4])
+  );
+  (* src = "byte_striping_synth.v:14" *)
+  DFF _272_ (
+    .C(clk_2f),
+    .D(_002_[5]),
+    .Q(in[5])
+  );
+  (* src = "byte_striping_synth.v:14" *)
+  DFF _273_ (
+    .C(clk_2f),
+    .D(_002_[6]),
+    .Q(in[6])
+  );
+  (* src = "byte_striping_synth.v:14" *)
+  DFF _274_ (
+    .C(clk_2f),
+    .D(_002_[7]),
+    .Q(in[7])
+  );
+  assign _008_ = _000_;
+  assign _009_ = _001_;
+  assign _018_ = _003_[0];
+  assign _019_ = _003_[1];
+  assign _020_ = _003_[2];
+  assign _021_ = _003_[3];
+  assign _022_ = _003_[4];
+  assign _023_ = _003_[5];
+  assign _024_ = _003_[6];
+  assign _025_ = _003_[7];
+  assign _026_ = _004_[0];
+  assign _027_ = _004_[1];
+  assign _028_ = _004_[2];
+  assign _029_ = _004_[3];
+  assign _030_ = _004_[4];
+  assign _031_ = _004_[5];
+  assign _032_ = _004_[6];
+  assign _033_ = _004_[7];
+  assign _035_ = _006_;
+  assign _036_ = _007_;
+  assign _010_ = _002_[0];
+  assign _011_ = _002_[1];
+  assign _012_ = _002_[2];
+  assign _013_ = _002_[3];
+  assign _014_ = _002_[4];
+  assign _015_ = _002_[5];
+  assign _016_ = _002_[6];
+  assign _017_ = _002_[7];
+  assign _034_ = _005_;
+  assign _126_[31:1] = { 30'h00000000, contador0 };
+  assign _127_[31:1] = { 30'h00000000, contador1 };
 endmodule

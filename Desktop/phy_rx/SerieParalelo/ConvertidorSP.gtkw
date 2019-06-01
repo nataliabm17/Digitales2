@@ -1,0 +1,52 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Thu May 23 00:13:36 2019
+[*]
+[dumpfile] "/home/alberto/Documents/Digitales2/Proyecto/SerieParalelo/ConvertidorSP.vcd"
+[dumpfile_mtime] "Thu May 23 00:13:22 2019"
+[dumpfile_size] 33732
+[savefile] "/home/alberto/Documents/Digitales2/Proyecto/SerieParalelo/ConvertidorSP.gtkw"
+[timestart] 0
+[size] 1920 878
+[pos] -1 -1
+*-15.237444 152000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoPruebasSerial.
+[sst_width] 233
+[signals_width] 220
+[sst_expanded] 1
+[sst_vpaned_height] 237
+@28
+BancoPruebasSerial.clk_8f
+BancoPruebasSerial.clk_f
+BancoPruebasSerial.data_in
+@22
+BancoPruebasSerial.data2send[7:0]
+BancoPruebasSerial.data2send_est[7:0]
+BancoPruebasSerial.BC_counter[3:0]
+@23
+BancoPruebasSerial.SerieParalelo_.BC_counterF[3:0]
+@22
+BancoPruebasSerial.BC_counter_est[3:0]
+@28
+BancoPruebasSerial.active
+BancoPruebasSerial.valid_out
+BancoPruebasSerial.reset
+@200
+-
+@28
+BancoPruebasSerial.SerieParalelo_Est_.data_in
+@22
+BancoPruebasSerial.SerieParalelo_Est_.data2send_est[7:0]
+BancoPruebasSerial.SerieParalelo_Est_.BC_counter_est[3:0]
+@28
+BancoPruebasSerial.SerieParalelo_Est_.active_est
+BancoPruebasSerial.SerieParalelo_Est_.valid_out_est
+@24
+BancoPruebasSerial.SerieParalelo_Est_.contadorF[2:0]
+@28
+BancoPruebasSerial.SerieParalelo_Est_.reset
+@22
+BancoPruebasSerial.SerieParalelo_Est_.pasoInSendF[7:0]
+BancoPruebasSerial.SerieParalelo_Est_.pasoInSend[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
