@@ -20,6 +20,9 @@ all:
 	sed -i 's/phy/phy_synth/g' phy_synth.v
 	sed -i 's/FlopsSerialUnstripe/FlopsSerialUnstripe_synth/g' phy_synth.v
 	sed -i 's/flopClock/flopClock_synth/g' phy_synth.v
+	sed -i 's/flops_rx/flops_rx_synth/g' phy_synth.v
+	sed -i 's/flops_rx1/flops_rx1_synth/g' phy_synth.v
+	sed -i 's/flops_valid/flops_valid_synth/g' phy_synth.v
 	iverilog -o phy bancoPrueba.v
 	vvp phy
 	gtkwave phy_.gtkw

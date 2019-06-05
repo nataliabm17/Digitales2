@@ -67,7 +67,7 @@ module ParaleloSerie (
       end else begin
         out44 <= 8;
         data_outS <= 0;
-        data2send <= 'hBC;
+        data2send <= 0;//'hBC;
         //contar =0;
         //data2sendF;
       end

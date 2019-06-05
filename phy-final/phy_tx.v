@@ -5,6 +5,7 @@
 //`include "etapa2_flops.v"
 `include "Otros_flops.v"
 `include "flopClock.v"
+`include "flops_valid.v"
 module phy_tx (
 	input clk_2f,
     input clk_8f,
@@ -27,6 +28,7 @@ module phy_tx (
     //output valid_1);
 
 	wire [7:0] d_out;
+		wire [7:0] d_out3;
     wire [7:0] in0;
     wire [7:0] in1;
     wire [7:0] lane0;
@@ -42,7 +44,7 @@ module phy_tx (
 	wire validinn0, validinn1;
 
 
-	wire v_out, valid0, valid1, valid0bs, valid1bs, v_out2, validps0, validps1, superClock1,superClock2, superReset1, superReset2;
+	wire  v_out,v_out2,v_out3, valid0, valid1, valid0bs, valid1bs, validps0, validps1, superClock1,superClock2, superReset1, superReset2;
     //wire clk2f;
 
 
@@ -66,29 +68,56 @@ module phy_tx (
 			.valid_in1 (valid1),
 			.valid_out (v_out));
 
+  /*	reg v_out2_d;
+	always @ ( posedge clk_2f) begin
+		//d_out2_d <= d_out2;
+		v_out2_d	 <= v_out;
+	end*/
+
     etapa2_flops flops2(.clk_8f (clk_8f), //clk_8f
                     .data_in0 (d_out),
                     .valid_in0 (v_out),
                     .data_out0 (d_out2),
-										//.valid_out0(v_out2),
-										.v_test(v_out2),
+										.valid_out0(v_out2),
+										//.v_test(v_out2),
                     .reset (reset));
 
-	// fix
-	reg [7:0] d_out2_d;
-	reg v_out2_d;
-	always @ ( posedge clk_2f) begin
-		d_out2_d <= d_out2;
-		v_out2_d	 <= v_out2;
-	end
-	// end fix
 
+								/*	flops_valid flops_v (.clk_8f (clk_8f),
+																				.reset (reset),
+																				.valid_in (v_out2),
+																				.valid_out (v_out2_d));
+																			*/
+	// flops_rx1 flopsRESETBYTE(.data_in0(reset),
+	// 							.clk_8f(clk_2f),
+	// 							.reset(resetCLK),
+	// 							.data_out0(resetByte));
+	reg resetByte0;
+	always @ ( posedge clk_8f) begin
+		//d_out2_d <= d_out2;
+		resetByte0	 <= reset;
+	end
+	reg resetByte1;
+	always @ ( posedge clk_8f) begin
+		//d_out2_d <= d_out2;
+		resetByte1	 <= resetByte0;
+	end
+	reg resetByte2;
+	always @ ( posedge clk_8f) begin
+		//d_out2_d <= d_out2;
+		resetByte2	 <= resetByte1;
+	end
+	reg resetByte3;
+	always @ ( posedge clk_8f) begin
+		//d_out2_d <= d_out2;
+		resetByte3	 <= resetByte2;
+	end
 	byte_striping byte_striping1(.clk_2f (clk_2f),
 								.clk_f (clk_f),
 								// .valid_in (v_out2),
 								// .data_in (d_out2),
-								.valid_in (v_out2_d),
-								.data_in (d_out2_d),
+								.valid_in (v_out2),
+								.data_in (d_out2),
 								.reset (reset),
 								.lane_0 (lane0),
 								.lane_1 (lane1),
@@ -133,7 +162,7 @@ module phy_tx (
     ParaleloSerie p2s0 (.clk_8f(clk_8f),
                     .clk_f (clk_f),
                     .data_inP(lane0),
-                    .reset (reset),
+                    .reset (resetByte3),
                     .valid_in(valid0bs),
                     .data2send (data2send0),
                     .data_outS (data_outS0)

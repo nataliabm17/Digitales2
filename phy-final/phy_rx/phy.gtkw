@@ -1,14 +1,14 @@
 [*]
 [*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
-[*] Tue May 28 20:14:13 2019
+[*] Sun Jun  2 23:00:27 2019
 [*]
-[dumpfile] "/home/daniela/Desktop/phy_rx/phy.vcd"
-[dumpfile_mtime] "Tue May 28 20:11:22 2019"
-[dumpfile_size] 140701
-[savefile] "/home/daniela/Desktop/phy_rx/phy.gtkw"
+[dumpfile] "/home/daniela/Desktop/phy-final/phy_rx/phy.vcd"
+[dumpfile_mtime] "Sun Jun  2 23:00:04 2019"
+[dumpfile_size] 186221
+[savefile] "/home/daniela/Desktop/phy-final/phy_rx/phy.gtkw"
 [timestart] 0
-[size] 1845 1056
-[pos] 260 125
+[size] 2261 1242
+[pos] 474 162
 *-15.125578 74500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] BancoPruebas.
 [treeopen] BancoPruebas.phy_rx.
@@ -16,7 +16,7 @@
 [sst_width] 404
 [signals_width] 450
 [sst_expanded] 1
-[sst_vpaned_height] 320
+[sst_vpaned_height] 399
 @200
 -Conductual
 @28
