@@ -1,0 +1,49 @@
+[*]
+[*] GTKWave Analyzer v3.3.58 (w)1999-2014 BSI
+[*] Sun Jun  9 23:01:29 2019
+[*]
+[dumpfile] "/home/est/Escritorio/git/Digitales2/Proyecto2/mem/mem.vcd"
+[dumpfile_mtime] "Sun Jun  9 23:01:20 2019"
+[dumpfile_size] 96362
+[savefile] "/home/est/Escritorio/git/Digitales2/Proyecto2/mem/mem.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] 119 318
+*-19.261360 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] BancoPruebas.
+[sst_width] 223
+[signals_width] 190
+[sst_expanded] 1
+[sst_vpaned_height] 160
+@200
+-Conductual
+@28
+BancoPruebas.mem.clk
+BancoPruebas.mem.rst
+BancoPruebas.mem.write_rq
+@24
+BancoPruebas.mem.w_address[3:0]
+BancoPruebas.mem.write_data[4:0]
+@28
+BancoPruebas.mem.read_rq
+@24
+BancoPruebas.mem.r_address[3:0]
+BancoPruebas.mem.read_data[4:0]
+@200
+-Estructural
+@28
+BancoPruebas.synth.clk
+BancoPruebas.synth.rst
+BancoPruebas.synth.write_rq
+@22
+BancoPruebas.synth.w_address[3:0]
+@24
+BancoPruebas.synth.write_data[4:0]
+@28
+BancoPruebas.synth.read_rq
+@22
+BancoPruebas.synth.r_address[3:0]
+@24
+BancoPruebas.synth.read_data_synth[4:0]
+[pattern_trace] 1
+[pattern_trace] 0
